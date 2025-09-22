@@ -1,19 +1,11 @@
-# The Ultimate Spring Boot Course
+# A Functional Crud Api Application
 
-This repository contains the starter project for Part 2 of my Spring Boot course:
-
-[https://codewithmosh.com/p/spring-boot-building-apis](https://codewithmosh.com/p/spring-boot-building-apis)
+This repository contains the required features for the restfull conventions and security
 
 ## About this Repository 
 
-This project is based on the final project from Part 1 of the course, but I’ve cleaned it up and removed unnecessary playground code so we can focus on building APIs in Part 2.
-
-You’ll be cloning this repository and coding along with me as we extend the project.
-
-To get started, clone the repository to your local machine:
-
+This project is for an electronic commerce application having everything from users to ordering of products and crud operations for all apis
 ```sh
-git clone https://github.com/mosh-hamedani/spring-api-starter
+git clone https://github.com/I-Josh-pro-grammin/E-commerce-Backend-Application
 
-cd spring-api
 ```
