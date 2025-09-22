@@ -2,8 +2,15 @@ spring:
   application:
     name: store
   datasource:
-    url: jdbc:mysql://localhost:3306/store_api?createDatabaseIfNotExist=true
-    username: root
-    password: MyPassword!
+    url: jdbc:postgresql://localhost:5432/store_api
+    username: postgres
+    password: 100aistuff
   jpa:
+    hibernate:
+      ddl-auto: update
     show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    enabled: false

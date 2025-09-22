@@ -36,6 +36,12 @@
         </dependency>
 
         <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>11.10.5</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
@@ -54,10 +60,6 @@
             <scope>runtime</scope>
         </dependency>
         <dependency>
-            <artifactId>flyway-core</artifactId>
-            <groupId>org.flywaydb</groupId>
-        </dependency>
-        <dependency>
             <artifactId>flyway-mysql</artifactId>
             <groupId>org.flywaydb</groupId>
         </dependency>
@@ -65,6 +67,28 @@
             <artifactId>lombok</artifactId>
             <groupId>org.projectlombok</groupId>
             <scope>annotationProcessor</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.7</version> <!-- Use the latest version; check for updates -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+            <version>1.6.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-processor</artifactId>
+            <version>1.6.2</version>
         </dependency>
 
 
