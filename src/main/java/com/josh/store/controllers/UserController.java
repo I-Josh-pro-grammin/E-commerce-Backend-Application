@@ -17,6 +17,10 @@ public class UserController {
     private final UserRepository userRepository;
     private final UserMapper userMapper;
 
+//    public CreateUserDto signup() {
+//        return userRepository.
+//    }
+
     @GetMapping
     public Iterable<UserDto> getAllUsers(
             @RequestParam(required = false, defaultValue = "", name = "sort")  String sortParam

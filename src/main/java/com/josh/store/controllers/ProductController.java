@@ -17,21 +17,21 @@ public class ProductController {
     private final ProductRepository productRepository;
     private final ProductMapper productMapper;
 
-    // Filtering products with optional filter parameter
+    // Filtering products with optional categoryId
     @GetMapping("")
     public List<ProductDto> allProducts(
-            @RequestParam(required = false) Byte categoryId
+            @RequestParam(name = "categoryId", required = false) Byte categoryId
     ) {
+        List<Product> products;
         if(categoryId != null){
-            return  productRepository.findByCategoryId(categoryId) .stream()
-                    .map(productMapper::toProductDto)
-                    .toList();
+            products = productRepository.findByCategoryId(categoryId);
         }else {
-            return productRepository.findAll()
-                    .stream()
-                    .map(productMapper::toProductDto)
-                    .toList();
+            products = productRepository.findAllWithCategory();
         }
+
+        return products.stream()
+                .map(productMapper::toProductDto)
+                .toList();
     }
 
     @GetMapping("/{id}")
